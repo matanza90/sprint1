@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>MINESWEEPER MATAN ZAKS</title>
+
+</head>
+
+<body onload="init()">
+<div class="main">
+<h1>MINESWEEPER</h1>
+<div class="top">
+<p class="levels">
+        <button onclick="changeLevel(4,2)"> EASY (4x4)</button>
+        <button onclick="changeLevel(8,12)">MEDIUM (8x8)</button>
+        <button onclick="changeLevel(12,30)">EXPERT (12x12)</button>
+    </p>
+            <div class="hints"></div>
+            <span class="watch"></span>
+            <button class="smiley" onclick="init()"></button>
+            <span class="flags"></span>
+        </div>
+
+        <div class="board" oncontextmenu="return false;"></div>
+        <div class="modal"></div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
